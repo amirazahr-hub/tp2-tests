@@ -2,7 +2,9 @@ package zahr.amira;
 
 import dev.langchain4j.data.embedding.Embedding;
 import dev.langchain4j.model.embedding.EmbeddingModel;
-import dev.langchain4j.model.embedding.onnx.bgesmallenv15.BgeSmallEnV15EmbeddingModel;
+// Modèle intégré : mis en commentaire car la dépendance bge-small est
+// en commentaire dans pom.xml (conflit avec easy-rag, Test 5)
+// import dev.langchain4j.model.embedding.onnx.bgesmallenv15.BgeSmallEnV15EmbeddingModel;
 import dev.langchain4j.model.google.genai.GoogleGenAiEmbeddingModel;
 import dev.langchain4j.store.embedding.CosineSimilarity;
 
@@ -35,10 +37,10 @@ public class Test4Embeddings {
 
     public static void main(String[] args) {
         // Modèle intégré (gratuit en tokens, entraîné sur de l'anglais)
-        EmbeddingModel integre = new BgeSmallEnV15EmbeddingModel();
-        tester("BgeSmallEnV15 (intégré)", integre);
+        // EmbeddingModel integre = new BgeSmallEnV15EmbeddingModel();
+        // tester("BgeSmallEnV15 (intégré)", integre);
 
-        // Modèle externe de Google (à décommenter quand le premier marche)
+        // Modèle externe de Google
         String cle = System.getenv("GEMINI_KEY");
         EmbeddingModel google = GoogleGenAiEmbeddingModel.builder()
                 .apiKey(cle)
