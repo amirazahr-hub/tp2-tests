@@ -6,7 +6,7 @@
         </encoder>
     </appender>
 
-    <logger name="dev.langchain4j" level="INFO"/>
+    <logger name="dev.langchain4j" level="DEBUG"/>
     <logger name="org.apache.fontbox" level="WARN"/>
 
     <root level="INFO">
