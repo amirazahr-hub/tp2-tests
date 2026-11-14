@@ -1,4 +1,4 @@
-# IA.md - Utilisation de l'IA pour le TP 2 (LangChain4j)
+# IA.md - Utilisation de l'IA pour le TP 2 
 
 Outil utilisé : Claude (Anthropic).
 Transparence : j'ai utilisé l'IA dans trois cas : (1) quand j'avais un problème de création ou de configuration, (2) quand j'avais des erreurs dans le code, (3) pour gagner du temps : l'IA a complété les classes à partir du code et des consignes du professeur, et je lui ai donné les résultats de mes exécutions pour qu'elle rédige un brouillon d'email, que j'ai ensuite relu et validé. J'ai lancé et testé moi-même chaque programme. Les utilisations sont listées ci-dessous.
